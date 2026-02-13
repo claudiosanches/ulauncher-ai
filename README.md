@@ -8,6 +8,15 @@ A [Ulauncher](https://ulauncher.io/) extension that integrates directly with the
 - **Synonym mode** (`syn`) — Find synonyms for any word, each displayed as a selectable item
 - **Copy to clipboard** — Press Enter on any result to copy it
 - **Configurable** — Choose your model, API key, and max results from Ulauncher preferences
+- **Any language** — Like any chat model, the language is irrelevant — just type in whatever language you prefer. You can also enforce a language directly in the prompt
+
+```
+ai Qual é a população do Brasil?
+ai ¿Quién inventó la bombilla?
+ai answer in French: what is the speed of light?
+syn alegre
+syn rapide
+```
 
 ## Installation
 
@@ -86,6 +95,8 @@ Each synonym appears as a separate item. Press **Enter** to copy that synonym to
 - `requests` library (included with Ulauncher)
 - An OpenAI API key with available credits
 
-## License
+## Tips
 
-MIT
+- Responses are kept short by design so they fit well in Ulauncher's result list
+- For longer answers, all chunks copy the full response — just press Enter on any item
+- The `gpt-4o-mini` model is the default because it's fast (~1-2s) and cheap, but you can switch to `gpt-4o` for more complex questions
