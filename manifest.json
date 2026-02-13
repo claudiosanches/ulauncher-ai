@@ -1,0 +1,47 @@
+{
+  "required_api_version": "^2.0.0",
+  "name": "AI Assistant",
+  "description": "Ask questions and get synonyms using OpenAI API directly in Ulauncher",
+  "developer_name": "Laércio Pereira",
+  "icon": "images/icon.svg",
+  "options": {
+    "query_debounce": 1.0
+  },
+  "preferences": [
+    {
+      "id": "ai_kw",
+      "type": "keyword",
+      "name": "AI Question",
+      "description": "Ask any question to AI",
+      "default_value": "ai"
+    },
+    {
+      "id": "syn_kw",
+      "type": "keyword",
+      "name": "Synonyms",
+      "description": "Find synonyms for a word",
+      "default_value": "syn"
+    },
+    {
+      "id": "openai_api_key",
+      "type": "input",
+      "name": "OpenAI API Key",
+      "description": "Your OpenAI API key (from https://platform.openai.com/api-keys)",
+      "default_value": ""
+    },
+    {
+      "id": "openai_model",
+      "type": "input",
+      "name": "OpenAI Model",
+      "description": "Model to use for completions",
+      "default_value": "gpt-4o-mini"
+    },
+    {
+      "id": "max_results",
+      "type": "input",
+      "name": "Max Results",
+      "description": "Maximum number of items to display",
+      "default_value": "5"
+    }
+  ]
+}
